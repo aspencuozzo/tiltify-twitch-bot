@@ -1,0 +1,2 @@
+requests ~= 2.31.0
+twitchio ~= 2.6.0

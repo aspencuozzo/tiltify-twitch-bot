@@ -6,7 +6,7 @@ A bot that sends a message in Twitch chat when a new Tiltify donation is detecte
 ## Installation
 > **NOTE:** Your Python 3 instance may be installed as simply `python` — if that's the case, swap out the references of `python3` below with `python`.
 
-First, clone or download this repository and open the directory created in your terminal. Ensure Python 3.7 or later is installed (`python3 -v`). Install all dependencies by running `python3 -m pip install -r requirements.txt`.
+First, clone or download this repository and open the directory created in your terminal. Ensure Python 3.7 or later is installed (`python3 -V`). Install all dependencies by running `python3 -m pip install -r requirements.txt`.
 
 Then, open `credentials-example.json`, and add your Tiltify and Twitch credentials to it. Here's what you need:
 

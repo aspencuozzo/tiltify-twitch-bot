@@ -43,7 +43,7 @@ class Bot(commands.Bot):
         
         super().__init__(
             token = self.credentials['twitch_access_token'],
-            prefix = '!',
+            prefix = ' ',
             initial_channels = self.credentials['twitch_channel_names']
         )
         self.loop.create_task(self.process_tiltify_api_call())

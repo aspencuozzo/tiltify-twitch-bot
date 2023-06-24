@@ -103,7 +103,8 @@ class Bot(commands.Bot):
         timestamp = datetime.now().strftime("%H:%M:%S")
 
         if resp.status_code == requests.codes.ok:
-            self.last_donation_id = resp.json()['data'][0]['id']
+            try: self.last_donation_id = resp.json()['data'][0]['id']
+            except: self.last_donation_id = None
         else:
             print(f"[{timestamp}] ERROR: Donation data could not be obtained from Tiltify. Something might be wrong with the API.")
         

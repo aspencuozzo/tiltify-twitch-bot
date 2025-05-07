@@ -1,4 +1,4 @@
-# tiltify-donation-bot
+# tiltify-twitch-bot
 A bot that sends a message in Twitch chat when a new Tiltify donation is detected. Updated to support the Tiltify V5 API.
 
 ![Screenshot of Twitch bot](https://i.imgur.com/Y4VWpZ2.png)

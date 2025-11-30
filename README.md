@@ -1,5 +1,5 @@
 # tiltify-donation-bot
-A bot that sends a message in Twitch chat when a new Tiltify donation is detected. Updated to support the Tiltify V5 API.
+A bot that sends a message in Twitch chat when a new Tiltify donation is detected. Updated to support the Tiltify V5 API. Created for use in [Gaming For Global Change](https://gamingforglobalchange.org) events.
 
 ![Screenshot of Twitch bot](https://i.imgur.com/Y4VWpZ2.png)
 
@@ -31,6 +31,6 @@ In `bot.py`, you can edit the following variables at the top of the file:
 ## Limitations
 This bot was developed with edge cases in mind, however there are still some extreme situations to consider. Since the bot relies on calling external APIs, it may be subject to any rate limiting done on the part of the API maintainers. 
 
-As far as I can tell, there is no formal rate limit with the Tiltify API established. Based on an employee's response [here,](https://github.com/Tiltify/api/issues/9) it is called every 5 seconds by default — you can change this if you wish, but you are the only one responsible if you get blacklisted. 
+As far as I can tell, there is no formal rate limit with the Tiltify API established. Based on an employee's response [here](https://github.com/Tiltify/api/issues/9), it is called every 5 seconds by default — you can change this if you wish, but you are the only one responsible if you get blacklisted. 
 
 Twitch's v5 API rate limit is very generous at 800 calls per minute (with OAuth), meaning you can effectively send 800 donation alerts per minute before getting limited. This should be more than enough for practically every use case, and I have not implemented any limit in the code because of this, however please keep this in mind if you are using this for an extremely high volume fundraiser.
